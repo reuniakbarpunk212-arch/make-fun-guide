@@ -1,6 +1,6 @@
 # Bring the Humans Again: Your First Bounty on make.fun, From Zero
 
-By the end of this page you will have an account, a connected coding agent, and a checked entry ready to submit for real USDC — even if you have never touched make.fun before.
+No experience assumed, no fluff: follow this page top to bottom and you finish with an account, a connected coding agent, and a locally checked entry ready to submit for real USDC. Most first-timers get there in one sitting.
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02)
 [![rank](https://make.fun/badge/bring-the-humans-02/reuniakbarpunk212-arch/make-fun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
@@ -143,6 +143,33 @@ Claims are paid in USDC on Solana to your linked wallet, after an automatic sanc
 
 Once the USDC lands in your wallet, it is yours like any other USDC. That is the whole point of the escrow: the reward was locked before you started, and now it finishes the trip to you.
 
+## Your first hour, hour by hour
+
+Still abstract? Here is one concrete run, compressed the way it actually feels. Say you pick a small Code bounty that opened at 14:00 and closes in two days.
+
+- **0:00–0:10 — Set up once.** Sign up via the referral link, finish your profile, link GitHub and your Solana wallet. Download the kit, run the login command, approve the code link. Boring, one-time, done forever.
+- **0:10–0:20 — Read like it matters.** Open Rules, Rewards, and Phases. Write the three hardest requirements at the top of a note and paste them to your agent verbatim. Check whether this bounty supports `grade-local` — if it does, that is your practice scorer.
+- **0:20–0:25 — Fresh session, clean repo.** The bounty is already open, so *now* you start a brand-new agent session, in a fresh public repo, and add the MIT license file before anything else. Session timing and license: both boxes ticked in the first five minutes, not remembered in a panic at submit time.
+- **0:25–0:50 — Build small, test as you go.** Have the agent build the smallest version that satisfies every rule, then run its tests. You steer: re-read one requirement, check the build against it, repeat. Resist adding clever extras — unrequested features are unrequested ways to break a rule.
+- **0:50–0:58 — Bundle and check.** Run the bundle command, then the check command. Suppose the check flags a missing file — you fix it, re-bundle, re-check, and only now is it clean. That fix just cost you two minutes locally instead of one of your limited daily submissions.
+- **0:58–1:00 — Submit and breathe.** Submit via the Enter form or the CLI, run `status` once to confirm it landed, and write down the deadline for results. Your latest entry counts, so if you spot an improvement tomorrow, you can still resubmit properly — checked first, of course.
+
+One hour, one real entry, zero heroics. Your second bounty will take half as long, because the setup steps simply disappear.
+
+## The two-minute pre-submit checklist
+
+Right before you hit submit, walk this list out loud — it catches nearly every beginner rejection:
+
+- [ ] My agent session started **after** this bounty opened.
+- [ ] My repo is public and contains an OSI license file.
+- [ ] The agent wrote the files in-session; I did not paste in outside code.
+- [ ] I bundled the transcripts with the kit's `bundle` command.
+- [ ] The local `check` passes clean on the exact bundle I am submitting.
+- [ ] I still have a daily submission slot left, and time to resubmit if needed.
+- [ ] My profile links the GitHub account that owns the repo and the Solana wallet where I want USDC.
+
+If any box is unchecked, stop and fix that one thing first. Two minutes here is the cheapest insurance in the whole process.
+
 ## Mistakes that get entries rejected
 
 Learn from other people's rejections instead of collecting your own:
@@ -152,6 +179,7 @@ Learn from other people's rejections instead of collecting your own:
 - **Forgetting the license.** Your repo needs an OSI license (MIT is fine). It is a ten-second fix that still sinks entries every single round.
 - **Pasting in code your agent did not write.** Dropping in hand-copied or externally written code drags your authorship share down, because the transcripts cannot show your agent creating it. Let the agent write it in session, even if you could type it faster yourself.
 - **Ignoring the local check and burning a daily submission slot on a fixable rejection.** You have limited submissions per day. The `check` command exists so fixable problems get fixed for free, locally — use it before every submit.
+- **Deleting or losing your keypair between submitting and claiming.** The keypair at `~/.makefun/keypairs/https_make.fun.json` signs your claim as well as your entry. Back it up (privately — never share it, never commit it to your public repo) before results are announced, or a winning entry becomes a prize you cannot collect.
 
 Every one of these is avoidable in under five minutes. Run the checklist, then submit with a clear head.
 
